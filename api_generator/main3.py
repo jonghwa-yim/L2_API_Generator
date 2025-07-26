@@ -114,4 +114,4 @@ if __name__ == "__main__":
     print("   - 자동 코드 리뷰 및 최적화")
     print("=" * 60)
 
-    uvicorn.run("main3:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main3:app", host="localhost", port=8000, reload=True)

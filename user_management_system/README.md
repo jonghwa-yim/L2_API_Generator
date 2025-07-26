@@ -121,6 +121,13 @@ curl -X GET "http://localhost:8001/health" -H "accept: application/json"
 Invoke-RestMethod -Uri "http://localhost:8001/api/auth/register" -Method POST -Headers @{accept="application/json"} -Body '{"username": "testuser", "email": "test@example.com", "password": "password123"}' -ContentType "application/json"
 ```
 
+```bash
+curl -X POST "http://localhost:8001/api/auth/register" \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-d '{"username": "testuser", "email": "test@example.com", "password": "password123"}'
+```
+
 ## 개발 정보
 
 이 API는 REST API Generator에 의해 자동 생성되었습니다.
@@ -129,7 +136,7 @@ Invoke-RestMethod -Uri "http://localhost:8001/api/auth/register" -Method POST -H
 - 프레임워크: FastAPI
 - 문서화: 자동 생성 (OpenAPI/Swagger)
 
-## 다음 단계
+## 다음 단계 (TODO)
 
 1. 데이터베이스 연결 설정
 2. 인증 시스템 구현

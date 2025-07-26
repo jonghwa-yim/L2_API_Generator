@@ -1286,4 +1286,4 @@ if __name__ == "__main__":
     print("4. 생성된 코드 다운로드 및 실행")
     print("=" * 50)
 
-    uvicorn.run("main1:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main1:app", host="localhost", port=8000, reload=True)
